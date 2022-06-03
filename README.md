@@ -1,2 +1,2 @@
-# EELAB
-전기전자기초설계및소프트웨어 3-1 학부 강의 정리
+## Head Motion Classification with Arduino nano ble 33 (TinyML)
+- This is a Course project of Fundamentals of Electrical And Electronic Design Laboratory And Software Practice(2022-09) , Konkuk Univ. 
