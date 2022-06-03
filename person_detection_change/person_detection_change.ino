@@ -113,7 +113,9 @@ void loop() {
   TfLiteTensor* output = interpreter->output(0);
 
   // Process the inference results.
-  int8_t person_score = output->data.uint8[kPersonIndex];
-  int8_t no_person_score = output->data.uint8[kNotAPersonIndex];
-  RespondToDetection(error_reporter, person_score, no_person_score);
+  int8_t front_score = output->data.uint8[kFrontIndex];
+  int8_t no_front_score = output->data.uint8[kNon_Front_Index];
+  int8_t blank_score = output->data.uint8[kBlank];
+  
+  RespondToDetection(error_reporter, front_score, no_front_score);
 }
